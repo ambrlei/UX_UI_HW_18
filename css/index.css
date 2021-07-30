@@ -1,0 +1,112 @@
+/* NAVIGATION STYLE */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 40px;
+}
+
+.navTabs {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+    margin: 40px;
+}
+
+li {
+    display: inline-block;
+    padding: 40px;
+}
+
+/* INTRO STYLE */
+
+.Intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfilePic {
+    border-radius: 50%;
+    float:left;
+    width: 300px;
+    height: 300px;
+    margin: 90px;
+}
+
+.HomeAbout {
+    padding: 50px;
+    width: 600px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #373737;
+    color: white;
+    border-radius: 8%; 
+    padding: 10px;
+ }
+ 
+
+/* MY WORK STYLE*/
+
+.myWork {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.HappyHippie {
+    grid-area: TopLeft;
+}
+
+.Government {
+    grid-area: TopRight;
+}
+
+.PupPal {
+    grid-area: BottomLeft;
+}
+
+.HappyGrocer {
+    grid-area: BottomRight;
+}
+
+.caseStudies {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "TopLeft TopRight"
+    "BottomLeft BottomRight";
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    background-color: lightgray;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+/* FOOTER STYLE */
+
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footTabs {
+    margin: 40px;
+    font-size: 20px;
+}
