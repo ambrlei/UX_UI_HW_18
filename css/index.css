@@ -17,6 +17,11 @@ nav {
     margin: 40px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 li {
     display: inline-block;
     padding: 40px;
@@ -35,7 +40,7 @@ li {
     width: 600px;
 }
 
-a {
+.socialLink {
     text-decoration: none;
     background-color: #373737;
     color: white;
@@ -105,15 +110,55 @@ a {
 
 /* ABOUT PAGE */
 
+.AboutMe {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+}
+
 .ProfilePic {
     border-radius: 4%;
-
-    width: 300px;
-    height: 300px;
-    margin: 90px;
+    width: 350px;
+    height: 400px;
+    float: left;
+    margin: 20px;
 }
 
 .aboutSummary {
-    display: block;
+    padding: 50px;
+    width: 900px;
+    margin: 20px;
 }
 
+.skillName {
+   margin: 60px;
+   width: 400px;
+}
+
+#mySkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* RESPONSIVE DESIGN CODES */
+
+@media only screen and (max-width: 600px) {
+    .caseStudies {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "TopLeft"
+            "TopRight"
+            "BottomLeft"
+            "BottomRight"
+            ;
+    }
+
+    #card {
+        padding: 0;
+    }
+}
