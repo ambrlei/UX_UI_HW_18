@@ -1,4 +1,30 @@
-/* NAVIGATION STYLE */
+
+/* STYLE GUIDE */
+
+body {
+    font-family: Open Sans;
+    background-color: #FCFCF7;
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-family:'Playfair Display', serif;
+    font-size: 75px;
+    font-style: Bold;
+    color: #EC5528;
+}
+
+h3 {
+    font-family: Playfair Display;
+    font-size: 36px;
+}
+
+/* HOME PAGE */
+
+/* Navigation style */
 
 nav {
     display: flex;
@@ -20,6 +46,7 @@ nav {
 a{
     text-decoration: none;
     color: black;
+    margin: 40px;
 }
 
 li {
@@ -27,7 +54,7 @@ li {
     padding: 40px;
 }
 
-/* HOME INTRO STYLE */
+/* Home Intro Style */
 
 .Intro {
     display: flex;
@@ -37,7 +64,7 @@ li {
 
 .HomeAbout {
     padding: 50px;
-    width: 600px;
+    width: 800px;
 }
 
 .socialLink {
@@ -49,7 +76,7 @@ li {
  }
  
 
-/* MY WORK STYLE*/
+/* My Work Style*/
 
 .myWork {
         display:flex;
@@ -75,11 +102,11 @@ li {
 
 .caseStudies {
     display:grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "TopLeft TopRight"
-    "BottomLeft BottomRight";
+    "TopLeft TopRight BottomLeft BottomRight";
+    align-items: center;
+    justify-content: center;
 }
 
 #card{
@@ -95,7 +122,7 @@ li {
     padding: 20px;
 }
 
-/* FOOTER STYLE */
+/* Footer Style */
 
 .Footer {
     display: flex;
@@ -115,6 +142,7 @@ li {
     flex-direction: row;
     margin: 20px;
     justify-content: center;
+    align-items: center;
 }
 
 .ProfilePic {
@@ -128,7 +156,7 @@ li {
 .aboutSummary {
     padding: 50px;
     width: 900px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .skillName {
@@ -137,8 +165,8 @@ li {
 }
 
 #mySkills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -146,19 +174,50 @@ li {
 
 /* RESPONSIVE DESIGN CODES */
 
-@media only screen and (max-width: 600px) {
-    .caseStudies {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "TopLeft"
-            "TopRight"
-            "BottomLeft"
-            "BottomRight"
-            ;
-    }
 
-    #card {
-        padding: 0;
+@media only screen and (max-width: 1500px) {
+
+    /* home page */
+
+    .caseStudies {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "TopLeft TopRight"
+    "BottomLeft BottomRight";
+    align-items: center;
+    justify-content: center;
+}}
+
+@media only screen and (max-width: 800px) {
+
+    /* about page */
+    
+    #mySkills {
+        display: block;
+        margin: 100px;
+        padding: 40px;
     }
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* home page */
+    .caseStudies {
+        display: block;
+}
+
+    /* about page */
+
+    #mySkills {
+        display: block;
+    }
+
+
+}
+
+
+
